@@ -1,1 +1,1 @@
-output = import('./dep').then(mod => mod.default);
+globalThis.output = import('./dep').then(mod => mod.default);

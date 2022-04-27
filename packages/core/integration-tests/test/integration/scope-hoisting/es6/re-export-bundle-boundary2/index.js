@@ -1,3 +1,3 @@
 import t from "./library/components.js";
 
-output = import("./async.js").then((c) => [c.default, t().a]);
+globalThis.output = import("./async.js").then((c) => [c.default, t().a]);

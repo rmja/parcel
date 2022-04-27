@@ -4,4 +4,4 @@ export function getExports() {
     return exports
 }
 
-output = getExports() === exports && getExports().foo
+globalThis.output = getExports() === exports && getExports().foo

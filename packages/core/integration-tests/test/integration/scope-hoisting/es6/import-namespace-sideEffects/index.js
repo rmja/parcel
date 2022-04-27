@@ -1,3 +1,3 @@
 import * as lib from "./other";
 
-output = lib;
+globalThis.output = lib;

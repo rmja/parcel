@@ -1,3 +1,3 @@
 import {foo, baz} from './b';
 
-output = foo + baz;
+globalThis.output = foo + baz;

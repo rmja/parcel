@@ -1,3 +1,3 @@
 const b = require('./b');
 
-output = b.run();
+globalThis.output = b.run();

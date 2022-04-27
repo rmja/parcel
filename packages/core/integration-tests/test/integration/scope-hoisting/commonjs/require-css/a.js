@@ -1,2 +1,2 @@
 const x = require("./b.css");
-output = x;
+globalThis.output = x;

@@ -1,1 +1,1 @@
-output = import("./async.js").then((ns) => [ns.foo, ns.thing]);
+globalThis.output = import("./async.js").then((ns) => [ns.foo, ns.thing]);

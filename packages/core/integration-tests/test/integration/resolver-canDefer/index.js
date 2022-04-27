@@ -1,3 +1,3 @@
 import {a} from "./library";
 
-output = a;
+globalThis.output = a;

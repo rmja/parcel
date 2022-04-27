@@ -1,3 +1,3 @@
 import {assetUrl} from './reexports';
 
-output = assetUrl;
+globalThis.output = assetUrl;

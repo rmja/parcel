@@ -1,6 +1,6 @@
 const getGlobals = require('./index.js');
 
-output = {
+globalThis.output = {
   file: __filename,
   other: getGlobals().file
 };

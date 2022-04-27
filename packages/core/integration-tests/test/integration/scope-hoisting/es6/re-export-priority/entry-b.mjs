@@ -1,2 +1,2 @@
 import {foo} from './b.mjs';
-output = foo;
+globalThis.output = foo;

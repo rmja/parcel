@@ -1,3 +1,3 @@
 import foo from "foo";
 
-output = foo();
+globalThis.output = foo();

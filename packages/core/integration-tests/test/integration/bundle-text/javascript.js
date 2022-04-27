@@ -1,3 +1,3 @@
 import jsText from 'bundle-text:./other.js';
-output = jsText;
+globalThis.output = jsText;
 export default jsText;

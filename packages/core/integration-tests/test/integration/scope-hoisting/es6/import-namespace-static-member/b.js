@@ -1,4 +1,4 @@
 import * as b from "./library/index.js";
 
 let val = "foo";
-output = b[val];
+globalThis.output = b[val];

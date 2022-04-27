@@ -11,5 +11,5 @@ class Foo {
 
 let result = new Foo().y(123);
 
-output = result;
+globalThis.output = result;
 export default result;

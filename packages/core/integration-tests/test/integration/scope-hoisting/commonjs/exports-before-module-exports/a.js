@@ -1,3 +1,3 @@
 'use strict';
 
-output = require('./b');
+globalThis.output = require('./b');

@@ -1,3 +1,3 @@
 const foo = require('./b');
 
-output = require.resolve('./b');
+globalThis.output = require.resolve('./b');

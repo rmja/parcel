@@ -1,4 +1,4 @@
 var b = require('./b');
 
 b.setFoo(3);
-output = b.foo + b['bar'];
+globalThis.output = b.foo + b['bar'];

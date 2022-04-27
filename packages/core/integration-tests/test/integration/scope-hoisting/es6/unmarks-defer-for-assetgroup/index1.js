@@ -1,3 +1,3 @@
 import { barer } from './package';
 
-output = barer;
+globalThis.output = barer;

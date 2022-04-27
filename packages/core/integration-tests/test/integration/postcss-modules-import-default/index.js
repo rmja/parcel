@@ -1,3 +1,3 @@
 import styles from "./style.module.css";
 
-output = styles["b-2"];
+globalThis.output = styles["b-2"];

@@ -1,3 +1,3 @@
 import Foo from "lib";
 
-output = import("./b.js").then(v => ([Foo, v]));
+globalThis.output = import("./b.js").then(v => ([Foo, v]));

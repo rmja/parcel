@@ -1,2 +1,2 @@
 import {foo} from './b';
-output = foo;
+globalThis.output = foo;

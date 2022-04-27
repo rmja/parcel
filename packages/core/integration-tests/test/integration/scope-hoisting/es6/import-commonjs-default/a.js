@@ -5,4 +5,4 @@ function calc() {
   return foo() + bar();
 }
 
-output = calc() + ':' + foo() + ':' + bar();
+globalThis.output = calc() + ':' + foo() + ':' + bar();

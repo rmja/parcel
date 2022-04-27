@@ -1,3 +1,3 @@
 import './index.css';
 
-output = 27;
+globalThis.output = 27;

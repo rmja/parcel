@@ -1,3 +1,3 @@
 const b = require('./b')
 
-output = [b.fn(), b];
+globalThis.output = [b.fn(), b];

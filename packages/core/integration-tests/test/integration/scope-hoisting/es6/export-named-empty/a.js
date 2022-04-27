@@ -1,2 +1,2 @@
-output = 2;
+globalThis.output = 2;
 export {};

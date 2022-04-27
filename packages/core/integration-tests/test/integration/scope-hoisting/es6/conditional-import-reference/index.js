@@ -4,4 +4,4 @@ if (false) {
   console.log(a);
 }
 
-output = a;
+globalThis.output = a;

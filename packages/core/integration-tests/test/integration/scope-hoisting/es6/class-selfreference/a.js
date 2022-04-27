@@ -8,4 +8,4 @@ class Bar {
   }
 }
 
-output = new Bar().duplicate();
+globalThis.output = new Bar().duplicate();

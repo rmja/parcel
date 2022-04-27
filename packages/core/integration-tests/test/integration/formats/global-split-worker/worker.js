@@ -1,3 +1,3 @@
 import {add} from "lodash";
 
-output = add(10, 20);
+globalThis.output = add(10, 20);

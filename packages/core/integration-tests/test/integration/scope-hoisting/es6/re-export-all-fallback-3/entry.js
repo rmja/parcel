@@ -1,3 +1,3 @@
 import {doStuff} from './stuff';
 
-output = doStuff();
+globalThis.output = doStuff();

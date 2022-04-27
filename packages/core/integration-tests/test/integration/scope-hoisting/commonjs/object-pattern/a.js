@@ -1,2 +1,2 @@
 var {foo, bar} = require('./b');
-output = foo + bar;
+globalThis.output = foo + bar;

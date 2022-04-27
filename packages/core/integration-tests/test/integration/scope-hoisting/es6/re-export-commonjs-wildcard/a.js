@@ -1,3 +1,3 @@
 import { createElement } from "./b.js";
 
-output = createElement();
+globalThis.output = createElement();

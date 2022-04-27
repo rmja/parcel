@@ -1,1 +1,1 @@
-output = module.require("./b.js");
+globalThis.output = module.require("./b.js");

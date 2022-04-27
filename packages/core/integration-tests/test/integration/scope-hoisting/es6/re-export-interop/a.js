@@ -1,2 +1,2 @@
 import * as translations from './translations';
-output = translations;
+globalThis.output = translations;

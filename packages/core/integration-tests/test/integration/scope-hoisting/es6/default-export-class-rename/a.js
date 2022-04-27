@@ -1,2 +1,2 @@
 import Test from './b';
-output = Test.create();
+globalThis.output = Test.create();

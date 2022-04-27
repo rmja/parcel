@@ -1,1 +1,1 @@
-output = import('./library/Toolbar');
+globalThis.output = import('./library/Toolbar');

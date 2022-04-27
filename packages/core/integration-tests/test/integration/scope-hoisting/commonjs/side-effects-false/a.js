@@ -1,1 +1,1 @@
-output = require('bar').foo(3)
+globalThis.output = require('bar').foo(3)

@@ -1,4 +1,4 @@
 function x() {
 	require("./b");
 }
-output = require("./a");
+globalThis.output = require("./a");

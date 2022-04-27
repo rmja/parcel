@@ -1,1 +1,1 @@
-output = require('stream');
+globalThis.output = require('stream');

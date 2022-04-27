@@ -1,1 +1,1 @@
-output = require('./browserify-bundle');
+globalThis.output = require('./browserify-bundle');

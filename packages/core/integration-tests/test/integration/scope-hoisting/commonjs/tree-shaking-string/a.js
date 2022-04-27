@@ -1,1 +1,1 @@
-output = [require('./b').foo, require('./c').foo];
+globalThis.output = [require('./b').foo, require('./c').foo];

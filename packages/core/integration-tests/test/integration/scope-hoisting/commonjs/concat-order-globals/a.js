@@ -1,3 +1,3 @@
 const other = require("./b.js");
 
-output = Buffer.from(other).toString();
+globalThis.output = Buffer.from(other).toString();

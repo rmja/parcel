@@ -1,1 +1,1 @@
-output = require('./');
+globalThis.output = require('./');

@@ -1,3 +1,3 @@
 const { b } = require("./b.js");
 
-output = b;
+globalThis.output = b;

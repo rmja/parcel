@@ -1,2 +1,2 @@
 exports.foo = 2;
-output = module;
+globalThis.output = module;

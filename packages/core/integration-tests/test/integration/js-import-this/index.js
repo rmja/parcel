@@ -13,6 +13,6 @@ let result = {
   wrappedNamespace: otherWrapped.returnThis(),
 };
 
-output = result;
+globalThis.output = result;
 export default result;
 

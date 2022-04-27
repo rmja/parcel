@@ -1,3 +1,3 @@
 import { h } from "./b.mjs";
 
-output = h;
+globalThis.output = h;

@@ -1,3 +1,3 @@
 import { barer, foo, bar } from './package';
 
-output = `${barer} ${foo} ${bar}`;
+globalThis.output = `${barer} ${foo} ${bar}`;

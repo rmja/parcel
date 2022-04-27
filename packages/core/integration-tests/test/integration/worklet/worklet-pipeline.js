@@ -1,2 +1,2 @@
 import url from 'worklet:./worklet';
-output = url;
+globalThis.output = url;

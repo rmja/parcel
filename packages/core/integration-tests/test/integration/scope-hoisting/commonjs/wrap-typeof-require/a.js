@@ -1,2 +1,2 @@
 const b = require("./b");
-output = b();
+globalThis.output = b();

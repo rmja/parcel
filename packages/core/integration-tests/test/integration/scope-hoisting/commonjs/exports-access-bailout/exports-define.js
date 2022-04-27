@@ -7,4 +7,4 @@ Object.defineProperty(exports, "COMMENT_KEYS", {
 	}
 });
 
-output = t.COMMENT_KEYS;
+globalThis.output = t.COMMENT_KEYS;

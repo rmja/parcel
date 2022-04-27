@@ -1,4 +1,4 @@
-output = {
+globalThis.output = {
   id: module.id,
   hot: module.hot,
   moduleRequire: module.require,

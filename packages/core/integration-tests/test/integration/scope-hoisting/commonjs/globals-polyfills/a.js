@@ -1,3 +1,3 @@
 const test = require('./b');
 
-output = !test("abc");
+globalThis.output = !test("abc");

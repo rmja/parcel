@@ -8,4 +8,4 @@ function after() {
   return 'after';
 }
 
-output = before() + ' ' + require('./require') + ' ' + after();
+globalThis.output = before() + ' ' + require('./require') + ' ' + after();

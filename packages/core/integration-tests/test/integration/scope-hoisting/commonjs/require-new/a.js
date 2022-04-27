@@ -1,1 +1,1 @@
-output = new (require("./b.js"))();
+globalThis.output = new (require("./b.js"))();

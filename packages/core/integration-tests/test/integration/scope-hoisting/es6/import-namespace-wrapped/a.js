@@ -3,4 +3,4 @@ if (Date.now() < 0) {
 }
 import * as b from "./b";
 
-output = b.foo;
+globalThis.output = b.foo;

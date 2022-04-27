@@ -1,3 +1,3 @@
 import { Foo, Bar } from "./b.js";
 
-output = {Foo, Bar};
+globalThis.output = {Foo, Bar};

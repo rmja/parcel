@@ -1,1 +1,1 @@
-output = import("./async.js").then(({missing}) => [missing]);
+globalThis.output = import("./async.js").then(({missing}) => [missing]);

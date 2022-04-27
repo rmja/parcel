@@ -1,1 +1,1 @@
-output = import('./lib').then(({test}) => test);
+globalThis.output = import('./lib').then(({test}) => test);

@@ -1,4 +1,4 @@
 require('./mutates');
 const value = require('./value');
 
-output = value.foo;
+globalThis.output = value.foo;

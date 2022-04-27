@@ -1,3 +1,3 @@
 import { run } from "./b.mjs";
 
-output = run();
+globalThis.output = run();

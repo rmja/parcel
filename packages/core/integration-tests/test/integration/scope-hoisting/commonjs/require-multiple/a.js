@@ -4,4 +4,4 @@ var before = 'before',
   c = require('./c'), 
   after = 'after';
 
-output = `${before} ${b.foo()} ${middle} ${c.bar()} ${after}`;
+globalThis.output = `${before} ${b.foo()} ${middle} ${c.bar()} ${after}`;

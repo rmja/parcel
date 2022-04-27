@@ -1,4 +1,4 @@
 const foo = "Hello World!";
-output = foo;
+globalThis.output = foo;
 module.exports = foo;
 // something

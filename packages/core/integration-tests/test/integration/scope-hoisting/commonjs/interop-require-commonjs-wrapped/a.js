@@ -1,2 +1,2 @@
 var b = require('./b');
-output = b['default'];
+globalThis.output = b['default'];

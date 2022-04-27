@@ -1,3 +1,3 @@
 import value from './value';
 
-output = import('./async').then(mod => mod.default);
+globalThis.output = import('./async').then(mod => mod.default);

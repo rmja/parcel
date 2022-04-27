@@ -1,3 +1,3 @@
 const {c, baz} = require('./b');
 
-output = c.foo + c.bar + baz;
+globalThis.output = c.foo + c.bar + baz;

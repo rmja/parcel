@@ -1,3 +1,3 @@
 import { logger, run } from "./b.js";
 
-output = [logger, run()];
+globalThis.output = [logger, run()];

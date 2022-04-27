@@ -1,4 +1,4 @@
 let b = require('./b');
-output = b({
+globalThis.output = b({
   foo: 2
 });

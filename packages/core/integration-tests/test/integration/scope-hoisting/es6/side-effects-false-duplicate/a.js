@@ -1,3 +1,3 @@
 import {foo} from 'bar';
 
-output = foo(2);
+globalThis.output = foo(2);

@@ -8,4 +8,4 @@ let a = get(x, "v");
 get(x, "update")();
 let b = get(x, "v");
 
-output = [a, b];
+globalThis.output = [a, b];

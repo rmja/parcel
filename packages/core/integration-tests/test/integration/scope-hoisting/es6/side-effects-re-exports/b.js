@@ -1,3 +1,3 @@
 import { message2 } from "./library/index.js";
 
-output = message2;
+globalThis.output = message2;

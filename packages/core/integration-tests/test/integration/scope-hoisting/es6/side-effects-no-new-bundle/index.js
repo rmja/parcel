@@ -1,3 +1,3 @@
 import { b1 } from "./library/a.js";
 
-output = b1
+globalThis.output = b1

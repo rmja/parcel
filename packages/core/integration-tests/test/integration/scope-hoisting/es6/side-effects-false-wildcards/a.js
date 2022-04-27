@@ -1,3 +1,3 @@
 import {foo} from 'bar'
 
-output = foo
+globalThis.output = foo

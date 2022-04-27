@@ -1,3 +1,3 @@
 import { x } from "./b.js";
 
-output = x;
+globalThis.output = x;

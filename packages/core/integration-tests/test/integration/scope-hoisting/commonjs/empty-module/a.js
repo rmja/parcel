@@ -1,3 +1,3 @@
-output = {
+globalThis.output = {
   b: require('./b')
 };

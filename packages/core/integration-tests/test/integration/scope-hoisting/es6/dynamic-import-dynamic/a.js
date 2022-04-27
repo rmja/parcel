@@ -1,1 +1,1 @@
-output = import("./b.js").then(b => b.default);
+globalThis.output = import("./b.js").then(b => b.default);

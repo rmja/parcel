@@ -1,1 +1,1 @@
-output = x;
+globalThis.output = x;

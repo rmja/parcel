@@ -1,3 +1,3 @@
 import {foo} from './library';
 
-output = foo;
+globalThis.output = foo;
