@@ -1873,11 +1873,11 @@ describe('scope hoisting', function () {
                     codeHighlights: [
                       {
                         start: {
-                          column: 38,
+                          column: 49,
                           line: 1,
                         },
                         end: {
-                          column: 44,
+                          column: 55,
                           line: 1,
                         },
                       },
@@ -1920,11 +1920,11 @@ describe('scope hoisting', function () {
                     codeHighlights: [
                       {
                         start: {
-                          column: 45,
+                          column: 56,
                           line: 1,
                         },
                         end: {
-                          column: 54,
+                          column: 65,
                           line: 1,
                         },
                       },
@@ -2087,7 +2087,7 @@ describe('scope hoisting', function () {
         b.getBundles()[0].filePath,
         'utf8',
       );
-      assert.strictEqual(contents.trim().length, 0);
+      assert.strictEqual(contents.trim(), `"use strict";`);
     });
 
     it('should support the jsx pragma', async function () {
