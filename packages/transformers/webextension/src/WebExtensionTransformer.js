@@ -3,7 +3,7 @@ import type {MutableAsset} from '@parcel/types';
 
 import {Transformer} from '@parcel/plugin';
 import path from 'path';
-import jsm from 'json-source-map';
+import {parse} from '@mischnic/json-sourcemap';
 import parseCSP from 'content-security-policy-parser';
 import {validateSchema} from '@parcel/utils';
 import ThrowableDiagnostic, {
@@ -43,6 +43,7 @@ async function collectDependencies(
   const filePath = asset.filePath;
   const assetDir = path.dirname(filePath);
   const isMV2 = program.manifest_version == 2;
+  delete program.$schema;
   if (program.default_locale) {
     const locales = path.join(assetDir, '_locales');
     let err = !(await fs.exists(locales))
@@ -352,16 +353,23 @@ export default (new Transformer({
     // browsers, and because it avoids delegating extra config to the user
     asset.setEnvironment({
       context: 'browser',
-      engines: asset.env.engines,
-      shouldOptimize: asset.env.shouldOptimize,
-      sourceMap: {
+      engines: {
+        browsers: asset.env.engines.browsers,
+      },
+      sourceMap: asset.env.sourceMap && {
         ...asset.env.sourceMap,
         inline: true,
         inlineSources: true,
       },
+      includeNodeModules: asset.env.includeNodeModules,
+      outputFormat: asset.env.outputFormat,
+      sourceType: asset.env.sourceType,
+      isLibrary: asset.env.isLibrary,
+      shouldOptimize: asset.env.shouldOptimize,
+      shouldScopeHoist: asset.env.shouldScopeHoist,
     });
     const code = await asset.getCode();
-    const parsed = jsm.parse(code);
+    const parsed = parse(code);
     const data: any = parsed.data;
 
     // Not using a unified schema dramatically improves error messages
